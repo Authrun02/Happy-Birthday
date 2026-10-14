@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nunito:wght@400;600&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bgfx" id="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
+
+<main class="stage">
+  <div class="scene" id="scene">
+    <div class="wrap">
+      <h1 class="title" id="title">A litte surprise for you</h1>
+      <i class="spark" style="left:-18px;top:34%;width:18px;height:18px" aria-hidden="true"></i>
+      <i class="spark" style="right:-14px;top:12%;width:14px;height:14px;animation-delay:-1s" aria-hidden="true"></i>
+      <i class="spark" style="right:-22px;bottom:30%;width:20px;height:20px;animation-delay:-2s" aria-hidden="true"></i>
+      <button class="env" id="env" type="button" aria-label="Open your birthday envelope" aria-expanded="false" aria-controls="letter">
+        <span class="back"></span>
+        <span class="paper"></span>
+        <span class="front"></span>
+        <span class="flap"></span>
+        <span class="seal"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C1 8.6 2.9 5 6.3 5c2 0 3.7 1.1 5.7 3.4C14 6.1 15.7 5 17.7 5c3.4 0 5.3 3.6 3.9 6.8C19.5 16.4 12 21 12 21z"/></svg></span>
+      </button>
+      <div class="floor"></div>
+    </div>
+    <p class="hint" id="hint">Tap the envelope to open it</p>
+  </div>
+
+  <section class="letter" id="letter" tabindex="-1" aria-label="Your birthday letter" hidden>
+    <div class="banner">
+      <i class="bln b1" aria-hidden="true"></i>
+      <i class="bln b3" aria-hidden="true"></i>
+      <i class="spark w" style="left:24%;top:22px;width:12px;height:12px" aria-hidden="true"></i>
+      <i class="spark w" style="right:26%;bottom:20px;width:16px;height:16px;animation-delay:-1.5s" aria-hidden="true"></i>
+      <p class="kicker">Wishing you the brightest day</p>
+      <h2>Happy Birthday</h2>
+    </div>
+    <div class="sheet">
+      <!-- EDIT YOUR LETTER HERE: change the names and each paragraph -->
+      <p class="dear">Dear [ash],</p>
+      <div class="body">
+        <p>Happy Birthday ash! I just wanted to tell you how awesome it is to have you as a friend. You're always so supportive, genuine, and fun to be around, and I really value our friendship.</p>
+        <p>I hope you have an incredible day being celebrated the way you deserve. Wishing you the absolute best year ahead filled with success, happiness, and great moments.</p>
+        <p>Enjoy your day, and know that I am always here for you.</p>
+      </div>
+      <div class="divider" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="with">Your friend,</p>
+      <p class="sign">[Berss]</p>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
